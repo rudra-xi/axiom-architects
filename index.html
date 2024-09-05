@@ -1,16 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="style.css">
-     <title>Axiom Architects</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+          <link rel="icon" href="./Assets/axiom-icon.svg" type="image/x-icon">
+		<link rel="stylesheet" href="style.css" />
+		<title>Axiom Architects</title>
+	</head>
+	<body>
+		<!--? CURTAIN -->
+		<div class="curtain">
+			<div class="counter"><p>0</p></div>
+		</div>
 
-     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/CustomEase.min.js"></script>
+		<section class="hero">
+			<div class="overlay"></div>
 
-     <script src="script.js"></script>
-</body>
+			<!--? NAVBAR SECTION -->
+			<nav>
+				<div class="nav-col">
+					<div class="nav-items">
+						<a href="#">axiom</a>
+					</div>
+					<div class="nav-items">
+						<p>gallery</p>
+					</div>
+				</div>
+
+				<div class="nav-col">
+					<div class="nav-items">
+						<a href="#">work</a>
+						<a href="#">mission</a>
+						<a href="#">contact</a>
+					</div>
+
+					<div class="nav-items">
+						<a href="#">twitter</a>
+						<a href="#">instagram</a>
+					</div>
+
+					<div class="nav-items">
+						<p>Mumbai, India</p>
+					</div>
+				</div>
+			</nav>
+
+			<!--? BRAND HEADER -->
+			<div class="header">
+				<h1>axiom</h1>
+			</div>
+
+			<!--? BRAND IMAGE -->
+			<div class="image">
+				<img src="./Assets/axiom.jpg" alt="axiom image" />
+			</div>
+		</section>
+
+		<!--? GSAP CDN WITH CUSTOM EASE PLUGIN -->
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/CustomEase.min.js"></script>
+
+		<script src="script.js"></script>
+	</body>
 </html>
