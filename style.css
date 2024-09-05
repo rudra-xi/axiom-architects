@@ -1,0 +1,19 @@
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: "bauhaus";
+	src: local("Bauhaus Regular"),
+		url("./Assets/BauhausRegular.woff") format(woff);
+}
+@font-face {
+	font-family: "book";
+	src: local("Campton Book"),
+		url("./Assets/CamptonBook.otf") format(opentype);
+}
+:root {
+	--primaryColor: #d7c49eff;
+	--secondaryColor: #343148ff;
+}
