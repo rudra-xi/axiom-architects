@@ -1,8 +1,4 @@
-* {
-	margin: 0%;
-	padding: 0%;
-	box-sizing: border-box;
-}
+/*? FONTS USED IN THIS PROJECT*/
 @font-face {
 	font-family: "bauhaus";
 	src: local("Bauhaus Regular"),
@@ -13,7 +9,155 @@
 	src: local("Campton Book"),
 		url("./Assets/CamptonBook.otf") format(opentype);
 }
+
+/*? ROOT TO ASSIGN VARIABLES*/
 :root {
 	--primaryColor: #d7c49eff;
 	--secondaryColor: #343148ff;
+}
+
+/*? BASIC BODY & TEXT STYLING*/
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+}
+html,
+body {
+	width: 100%;
+	height: 100%;
+	font-family: "book";
+	background-color: var(--primaryColor);
+	color: var(--secondaryColor);
+}
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+p,
+a {
+	text-decoration: none;
+	font-size: 13px;
+	color: var(--secondaryColor);
+}
+
+/*? CURTAIN STYLING*/
+.curtain {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+.counter {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 40px;
+	height: 20px;
+	text-align: center;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	z-index: 0;
+}
+.counter p {
+	position: relative;
+	display: block;
+	transform: translateY(20px);
+}
+
+/*? HERO SECTION STYLING*/
+.hero {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0.7);
+	width: 100vw;
+	height: 100vh;
+	clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+	will-change: transform;
+	z-index: 1;
+}
+.overlay {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: var(--secondaryColor);
+	clip-path: polygon(0 100%, 100% 100%, 100% 0%, 0 0);
+	z-index: 2;
+}
+
+/*? NAVBAR STYLING*/
+nav {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 1em;
+	display: flex;
+}
+.nav-col {
+	flex: 1;
+	display: flex;
+}
+.nav-items {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+.nav-col:nth-child(2) .nav-items:last-child p {
+	text-align: right;
+}
+
+/*? HEADER STYLING*/
+.header {
+	position: absolute;
+	width: 100%;
+	top: -5%;
+	left: 0;
+	clip-path: polygon(0 100%, 100% 100%, 100% 0%, 0 0);
+	z-index: 1;
+}
+.header h1 {
+	font-family: "bauhaus";
+	font-size: 38.5vw;
+	text-align: center;
+	margin: 0;
+	padding: 0%;
+	line-height: 100%;
+}
+
+.header h1 span {
+	position: relative;
+	display: inline-block;
+	transform: translateY(500px);
+}
+
+.image {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 35vh;
+	overflow: hidden;
+	z-index: 0;
+}
+
+.image img {
+	transform: scale(2);
+}
+
+@media (max-width: 768px) {
+	.nav-col:nth-child(1) .nav-items:nth-child(2) p {
+		text-align: right;
+	}
+	.nav-col:nth-child(2) {
+		display: none;
+	}
+	.header {
+		top: 30%;
+	}
+	.image {
+		height: 50vh;
+	}
 }
