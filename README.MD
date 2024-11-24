@@ -31,7 +31,7 @@ We welcome contributions from anyone interested in improving the website or addi
 
 ## Author
 
-Goutam Prasad (@goutam-prasad-27)
+***[Rudra-xi](https://github.com/rudra-xi)***
 
 ## License
 
